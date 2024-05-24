@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Tam</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/zachary-tam-6a239217a/" target="_blank"><img src="img/linkedin.png"
+            alt="Linked In"></a>
+    <a href="https://github.com/ZacTimTam" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+    <a href="mailto:zactam60@gmail.com" target="_blank"><img src="img/email.png" alt="Instagram"></a>
+    <!-- Add more icons as needed -->
+</div>
+
+<body>
+    <nav id="navbar">
+        <p>© by Zachary Tam</p>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1aKMWa5KkhgL46a0KaUC46akjhWyJMK87/view?usp=drive_link">Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="summary">
+        <div class="text-slider">
+            <p>Hello and Welcome!</p>
+            <p>你好，歡迎光臨!</p>
+            <p>हैलो और स्वागत है!</p>
+            <p>¡Hola y bienvenido!</p>
+            <p>Bonjour et bienvenue!</p>
+            <p>أهلا ومرحبا!</p>
+            <p>হ্যালো এবং স্বাগতম!</p>
+            <p>Olá e bem-vindo!</p>
+            <p>Привет и добро пожаловать!</p>
+            <p>ہیلو اور خوش آمدید!</p>
+            <p>Halo dan selamat datang!</p>
+            <p>Hallo und Willkommen!</p>
+        </div>
+    </div>
+
+    <div id="hero" class="hidden ">
+        <img src="img/zachary_tam.png" alt="Zachary Tam">
+        <div id="hero-text">
+            <h1> MEET <span class="large">ZACHARY TAM</span></h1>
+            <h1> THE SOFTWARE DEVELOPER</h1>
+            <h2> currently in Melbourne, Australia</h2>
+        </div>
+    </div>
+
+    <div class="summary-2">
+        <div class="text-slider-2">
+            <p>Hallo und Willkommen!</p>
+            <p>Halo dan selamat datang!</p>
+            <p>ہیلو اور خوش آمدید!</p>
+            <p>Привет и добро пожаловать!</p>
+            <p>Olá e bem-vindo!</p>
+            <p>হ্যালো এবং স্বাগতম!</p>
+            <p>أهلا ومرحبا!</p>
+            <p>Bonjour et bienvenue!</p>
+            <p>¡Hola y bienvenido!</p>
+            <p>हैलो और स्वागत है!</p>
+            <p>你好，歡迎光臨!</p>
+            <p>Hello and Welcome!</p>
+        </div>
+    </div>
+
+
+    <div id="about" class="hidden">
+        <h1> ABOUT ME></h1>
+        <div id="about-h2">
+            <h2 class="soft">I am <span id="soft-skill">Agile</span></h2>
+            <h2> and a</h2>
+            <h2 class="code"> <span id="code-base">Python</span> developer</h2>
+        </div>
+        <p>A penultimate software development student at Monash University.
+            I strive to create elegant and practial solutions, embracing challgenges with a transparent and
+            direct approach. My commitment to iterative learning ensures that my work is both accessible
+            and empathetic. I excel in temwork, prioritising collaboration, and value diverse perspectives to
+            drive innovative outcomes. </p>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#soft-skill', {
+            strings: ['Agile', 'a Team Player', 'a Communicator', 'Creative', ' a Problem Solver'],
+            typeSpeed: 200,
+            backSpeed: 50,
+            loop: true
+        });
+
+        var typed = new Typed('#code-base', {
+            strings: ['Python', 'C++', 'PHP', 'Java', 'ReactJS', 'JavaScript'],
+            typeSpeed: 200,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+    <div id="projects" class="hidden scroll-container">
+        <h1> PROJECTS></h1>
+        <div id="img-content" class="projects">
+            <div id="project-1" class="project-container-1 hidden">
+                <p>Click image to access the site!</p>
+                <a href="https://coralcoast.u24s1024.iedev.org/"><img src="img/coral-coast.png"
+                        alt="Coral Coast Travel Agency Site"></a>
+                <h2> Coral Coast Travel Agency</h2>
+                <p>University assignment:</p>
+                <p>Full stack web application where the requirements are given by a mock client. </p>
+                <p>Developed in an Agile team environment. To prepare to work with an actual client in the following
+                    semster</p>
+            </div>
+            <div id="project-2" class="project-container-2 hidden">
+                <p>Click image to access the site!</p>
+                <a href="https://what-to-cook-tau.vercel.app/"><img src="img/what-to-cook.png"
+                        alt="Coral Coast Travel Agency Site"></a>
+                <h2> What-can-I-cook? </h2>
+                <p>Side project:</p>
+                <p>A web application that helps determine what you can make based on selected ingredients and provides
+                    instructions on how to make it</p>
+                <p>Utilises OpenAI API to process the data and return available options. The option is then formatted by
+                    the web application</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="hidden scroll-container">
+        <h1> WORK></h1>
+        <div id="job-content">
+            <div id="job" class="project-container-1 hidden">
+                <h2>PLE COMPUTERS</h2>
+                <div id="job-desc">
+                    <p>Shift Manager</p>
+                    <p>Aug 2022 - Present</p>
+                </div>
+            </div>
+            <div id="job" class="project-container-2 hidden">
+                <h2>PLE COMPUTERS</h2>
+                <div id="job-desc">
+                    <p>Retail Assistant</p>
+                    <p>Feb 2022 - Present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="education" class="hidden scroll-container">
+        <h1> EDUCATION></h1>
+        <div id="education-content">
+            <div id="ed" class="project-container-1 hidden">
+                <h2>Monash University</h2>
+                <div id="ed-desc">
+                    <p>Bachelor of Information Technology in Software Development</p>
+                    <p>Feb 2021 - Present</p>
+                </div>
+            </div>
+            <div id="ed" class="project-container-2 hidden">
+                <h2>Waverley Christian College</h2>
+                <div id="ed-desc">
+                    <p>Complete Year 12 VCE</p>
+                    <p>Feb 2017 - Nov 2020</p>
+                </div>
+            </div>
+            <div id="ed" class="project-container-3 hidden">
+                <h2>Box Hill Institution</h2>
+                <div id="ed-desc">
+                    <p>Certificate III in Information Technology amd Digital Design</p>
+                    <p>July 2018 - Nov 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h1>
+            GET IN CONTACT>
+        </h1>
+        <div id="footer-content">
+            <ul class="nav-links">
+                <li> <a href="https://www.linkedin.com/in/zachary-tam-6a239217a/" target="_blank"><img
+                            src="img/linkedin.png" alt="Linked In"></a></li>
+                <li><a href="https://github.com/ZacTimTam" target="_blank"><img src="img/github.png" alt="GitHub"></a></li>
+                <li> <a href="mailto:zactam60@gmail.com" target="_blank"><img src="img/email.png" alt="Instagram"></a></li>
+            </ul>
+            <div>
+                <p> ©2024 Zachary Tam</p>
+                <p> Design and Coded by Zachary Tam</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    overflow-y: scroll; /* Vertical scrolling */
+    scroll-snap-type: y proximity; /* Vertical snapping */
+}
+
+/* Nav Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F8FF;
+    padding: 30px 20px;
+}
+
+#navbar .nav-links {
+    list-style-type: none;
+}
+
+#navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Text Slider*/
+.text-slider {
+    display: flex;
+    white-space: nowrap;
+    animation: 20s slide linear infinite;
+}
+
+.text-slider p {
+    margin-right: 50px;     /* Adds space between the paragraphs, adjust as needed */
+    flex-shrink: 0;         /* Prevents the paragraph from shrinking */
+    font-size: 25px;
+}
+
+.summary {
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+}
+
+/* Text Slider 2*/
+.text-slider-2 {
+    display: flex;
+    white-space: nowrap;
+    animation: 20s slide-2 linear infinite;
+}
+
+.text-slider-2 p {
+    margin-right: 50px;     /* Adds space between the paragraphs, adjust as needed */
+    flex-shrink: 0;         /* Prevents the paragraph from shrinking */
+    font-size: 25px;
+    margin-bottom: 5vh;
+}
+
+.summary-2 {
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------
+Hero Section */
+
+#hero {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 85vh;
+    max-height: 85vh;
+    padding-left: 100px;
+}
+
+#hero img {
+    width:450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    margin-bottom: 5vh;
+}
+
+
+#hero h1{
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+#hero .large{
+    font-size: 85px;
+}
+
+#hero h2 {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* About */
+#about {
+    display: grid;
+    min-height: 100vh;
+}
+
+#about h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+#about h2 {
+    margin-left: 45vw;  /* Keeps your left margin */
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+#about .soft {
+    margin-left: 10vw;
+}
+
+#about .code {
+    margin-left: 45vw;
+}
+
+#about p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 30px;
+}
+
+
+#projects {
+    display: grid;
+    min-height: 80vh;
+}
+
+#projects h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+#img-content {
+    display: flex;
+    justify-content: center; /* Centering the project divs horizontally */
+    flex-wrap: wrap; /* Allows project items to wrap in case of insufficient space */
+    gap: 20px; /* Adds space between project containers */
+}
+
+#img-content p{
+    margin-bottom: 20px;
+}
+
+#project-1, #project-2 {
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Center aligns the content horizontally */
+    text-align: center; /* Centers the text within each block */
+    max-width: 350px; /* Optional: constrain the width of each project block */
+    margin: 5vw;
+    margin-bottom: 2rem; /* Space between rows when wrapping occurs */
+}
+
+#project-1 img, #project-2 img {
+    width: 350px; /* Makes the image responsive */
+    height: 250px; /* Maintains aspect ratio */
+    border-radius: 5%; /* Softens the corners of the image */
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    margin-bottom: 3vh;
+}
+
+#img-content .project-container-1 {
+    transition-delay: 200ms; /* Staggered delay for first item */
+}
+
+#img-content .project-container-2 {
+    transition-delay: 400ms; /* Staggered delay for second item */
+}
+
+
+#work {
+    display: grid;
+    min-height: 30vh;
+}
+
+#work h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+#job {
+    border-bottom-style: solid;
+    border-width: thin;
+    margin: 0 5vw 3vh 5vw;
+}
+
+#job p {
+    font-weight: lighter;
+}
+
+#job-content {
+    display: grid;
+    place-items: left;
+    align-content: center;
+}
+
+#job-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+#job-content .project-container-1 {
+    transition-delay: 100ms; /* Staggered delay for first item */
+}
+
+#job-content .project-container-2 {
+    transition-delay: 200ms; /* Staggered delay for second item */
+}
+
+
+
+
+#education {
+    display: grid;
+    min-height: 40vh;
+}
+
+#education h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+#education-content {
+    display: grid;
+    place-items: left;
+    align-content: center;
+}
+
+#education-content p{
+    font-weight: lighter;
+}
+
+#ed {
+    border-bottom-style: solid;
+    border-width: thin;
+    margin: 0 5vw 3vh 5vw;
+}
+
+#ed-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+
+#education-content .project-container-1 {
+    transition-delay: 100ms; /* Staggered delay for first item */
+}
+
+#education-content .project-container-2 {
+    transition-delay: 200ms; /* Staggered delay for second item */
+}
+
+#education-content .project-container-3 {
+    transition-delay: 300ms; /* Staggered delay for second item */
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 10px; /* Distance from the right edge of the viewport */
+    transform: translateY(-50%); /* Adjust the div to be centered vertically */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.social-icons a {
+    display: block; /* Stack icons vertically */
+    margin: 5px 0; /* Space between icons */
+}
+
+.social-icons img {
+    width: 30px; /* Set a specific size for icons */
+    height: auto;
+    display: block; /* Ensure the link area matches the image size */
+}
+
+
+#footer {
+    display: grid;
+    min-height: 30vh;
+    background-color: #F0F8FF;
+}
+
+#footer h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+#footer .nav-links {
+    list-style-type: none;
+}
+
+#footer .nav-links li {
+    display: inline-block;
+    margin-left: 10vw;
+}
+
+#footer .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: light;
+}
+
+#footer .nav-links li img{
+    width: 50px; /* Set a specific size for icons */
+    height: auto;
+    display: block; /* Ensure the link area matches the image size */
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4vw;
+}
