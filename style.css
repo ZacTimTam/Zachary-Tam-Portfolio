@@ -533,19 +533,30 @@ Hero Section */
 
 @media (max-width: 768px) {
 
-#footer .nav-links li img{
-    width: 40px; /* Set a specific size for icons */
-    height: auto;
-    display: block; /* Ensure the link area matches the image size */
-}
+    #footer h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+    
+    #footer .nav-links li img{
+        width: 35px; /* Set a specific size for icons */
+        height: auto;
+        display: block; /* Ensure the link area matches the image size */
+    }
+    
+    #footer .nav-links li {
+        display: inline-block;
+        margin-left: 1vw;
+    }
+    
+    #footer .nav-links {
+        margin-left: 5vw;
+    }
 
-#footer .nav-links li {
-    display: inline-block;
-    margin-left: 2vw;
-}
-
-#footer .nav-links {
-    margin-left: 5vw;
-}
+    #footer p {
+        font-size: 12px;
+    }
 
 }
