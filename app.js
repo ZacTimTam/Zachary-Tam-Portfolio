@@ -29,3 +29,18 @@ window.onscroll = function() {
     // Set the opacity of the icons based on scroll percentage
     document.querySelector('.social-icons').style.opacity = 1 - scrollPercentage;
 };
+
+
+function toggleMenu() {
+    var links = document.querySelector('#navbar .nav-links');
+    var navbar = document.getElementById('navbar'); // Get the navbar container
+
+    // Toggle display of the links
+    if (links.style.display === 'block') {
+        links.style.display = 'none';
+        navbar.style.marginBottom = '0'; // Reset bottom margin when menu is closed
+    } else {
+        links.style.display = 'block';
+        navbar.style.marginBottom = '8vh'; // Increase bottom margin when menu is open
+    }
+}

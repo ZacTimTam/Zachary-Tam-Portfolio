@@ -18,10 +18,22 @@ body {
     align-items: center;
     background-color: #F0F8FF;
     padding: 30px 20px;
+    position: relative;
+}
+
+#navbar .hamburger-menu {
+    display: none;  
+    cursor: pointer;
+    font-size: 30px;  
 }
 
 #navbar .nav-links {
     list-style-type: none;
+    display: flex;  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 #navbar .nav-links li {
@@ -35,6 +47,29 @@ body {
     font-weight: bold;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #navbar .hamburger-menu {
+        display: block;  
+    }
+
+    #navbar .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        background-color: #F0F8FF;  
+        display: none;  
+    }
+
+    #navbar .nav-links li {
+        text-align: center;  
+        width: 100%;  
+        padding: 10px 0;  
+    }
+    
+}
 /* Text Slider*/
 .text-slider {
     display: flex;
@@ -43,8 +78,8 @@ body {
 }
 
 .text-slider p {
-    margin-right: 50px;     /* Adds space between the paragraphs, adjust as needed */
-    flex-shrink: 0;         /* Prevents the paragraph from shrinking */
+    margin-right: 50px;   
+    flex-shrink: 0;         
     font-size: 25px;
 }
 
@@ -62,8 +97,8 @@ body {
 }
 
 .text-slider-2 p {
-    margin-right: 50px;     /* Adds space between the paragraphs, adjust as needed */
-    flex-shrink: 0;         /* Prevents the paragraph from shrinking */
+    margin-right: 50px;    
+    flex-shrink: 0;        
     font-size: 25px;
     margin-bottom: 5vh;
 }
@@ -73,6 +108,7 @@ body {
     padding: 10px 0;
     display: flex;
 }
+
 
 
 @keyframes slide {
@@ -172,6 +208,7 @@ Hero Section */
 
     #hero-text {
         margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
 
@@ -189,29 +226,29 @@ Hero Section */
 }
 
 #about h2 {
-    margin-left: 45vw;  /* Keeps your left margin */
+    margin-left: 45vw;  
     font-size: 55px;
     font-weight: bold;
     line-height: 1.8;
     padding-left: 40vw;
-    max-padding-left: 660px; /* Example max value */
+    max-padding-left: 660px; 
 }
 
 #about h2{ 
     position: relative;
-    max-width: 1200px; /* Adjust based on your content's max width */
+    max-width: 1200px; 
     margin-left: auto;
     margin-right: auto;
 }
 
 #about .soft {
-    padding-left: 10vw; /* Using padding inside a centered container */
-    max-padding-left: 120px; /* Example max value */
+    padding-left: 10vw; 
+    max-padding-left: 120px; 
 }
 
 #about .code {
     padding-left: 50vw;
-    max-padding-left: 660px; /* Example max value */
+    max-padding-left: 660px; 
 }
 #about p {
     margin-left: 5vw;
@@ -222,9 +259,9 @@ Hero Section */
 @media (max-width: 768px) {
     /* Adjust the grid container */
     #about {
-        display: block;  /* Optionally switch to block layout for simpler stacking */
-        min-height: auto;  /* Allow the height to grow as needed */
-        padding: 20px;  /* Add padding around the content */
+        display: block;  
+        min-height: auto; 
+        padding: 20px;  
         min-height: 100vh;
         margin-top: 20vh;
     }
@@ -232,9 +269,9 @@ Hero Section */
 
     /* Adjust heading sizes and margins */
     #about h1 {
-        font-size: 55px;  /* Smaller font size for the main heading */
-        margin-left: 3vw;  /* Reduce left margin */
-        text-align: left;  /* Center align might work better on small screens */
+        font-size: 55px; 
+        margin-left: 3vw;  
+        text-align: left; 
     }
 
     #about-h2 {
@@ -243,9 +280,9 @@ Hero Section */
     }
 
     #about h2 {
-        font-size: 28px;  /* Smaller font size for subheadings */
-        margin-left: 2vw;  /* Reduce the left margin to a more modest value */
-        padding-left: 0;  /* Remove large padding */
+        font-size: 28px; 
+        margin-left: 2vw;  
+        padding-left: 0;  
         text-align: center;  
         line-height: 1.4;  
     }
@@ -440,6 +477,16 @@ Hero Section */
     width: 30px; /* Set a specific size for icons */
     height: auto;
     display: block; /* Ensure the link area matches the image size */
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        position: fixed;
+        top: 50%; /* Center vertically */
+        right: 2vw; /* Distance from the right edge of the viewport */
+        transform: translateY(-50%); /* Adjust the div to be centered vertically */
+        z-index: 1000; /* Ensure it's above other content */
+    }
 }
 
 
