@@ -104,7 +104,6 @@ Hero Section */
     align-content: center;
     min-height: 85vh;
     max-height: 85vh;
-    padding-left: 100px;
 }
 
 #hero img {
@@ -134,6 +133,49 @@ Hero Section */
     margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+    #hero {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 85vh;
+        max-height: 85vh;
+    }
+
+
+    #hero img {
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+        margin-bottom: 5vh;
+    }
+
+
+    #hero h1{
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+    
+    #hero .large{
+        font-size: 75px;
+    }
+    
+    #hero h2 {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #hero-text {
+        margin-left: 10vw;
+    }
+}
+
+
 /* About */
 #about {
     display: grid;
@@ -151,20 +193,75 @@ Hero Section */
     font-size: 55px;
     font-weight: bold;
     line-height: 1.8;
+    padding-left: 40vw;
+    max-padding-left: 660px; /* Example max value */
+}
+
+#about h2{ 
+    position: relative;
+    max-width: 1200px; /* Adjust based on your content's max width */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about .soft {
-    margin-left: 10vw;
+    padding-left: 10vw; /* Using padding inside a centered container */
+    max-padding-left: 120px; /* Example max value */
 }
 
 #about .code {
-    margin-left: 45vw;
+    padding-left: 50vw;
+    max-padding-left: 660px; /* Example max value */
 }
-
 #about p {
     margin-left: 5vw;
     margin-right: 5vw;
     font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust the grid container */
+    #about {
+        display: block;  /* Optionally switch to block layout for simpler stacking */
+        min-height: auto;  /* Allow the height to grow as needed */
+        padding: 20px;  /* Add padding around the content */
+        min-height: 100vh;
+        margin-top: 20vh;
+    }
+
+
+    /* Adjust heading sizes and margins */
+    #about h1 {
+        font-size: 55px;  /* Smaller font size for the main heading */
+        margin-left: 3vw;  /* Reduce left margin */
+        text-align: left;  /* Center align might work better on small screens */
+    }
+
+    #about-h2 {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    #about h2 {
+        font-size: 28px;  /* Smaller font size for subheadings */
+        margin-left: 2vw;  /* Reduce the left margin to a more modest value */
+        padding-left: 0;  /* Remove large padding */
+        text-align: center;  
+        line-height: 1.4;  
+    }
+
+    
+    #about .soft, #about .code {
+        padding-left: 5vw;  
+        max-padding-left: 50px;  
+    }
+
+    /* Adjust paragraph styles */
+    #about p {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        font-size: 22px;  
+    }
 }
 
 
@@ -192,7 +289,7 @@ Hero Section */
 
 #project-1, #project-2 {
     display: flex;
-    flex-direction: column; /* Stacks the elements vertically */
+    flex-direction: column; 
     align-items: center; /* Center aligns the content horizontally */
     text-align: center; /* Centers the text within each block */
     max-width: 350px; /* Optional: constrain the width of each project block */
@@ -201,10 +298,10 @@ Hero Section */
 }
 
 #project-1 img, #project-2 img {
-    width: 350px; /* Makes the image responsive */
-    height: 250px; /* Maintains aspect ratio */
+    width: 350px; 
+    height: 250px; 
     border-radius: 5%; /* Softens the corners of the image */
-    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
     margin-bottom: 3vh;
 }
 
@@ -365,7 +462,7 @@ Hero Section */
 
 #footer .nav-links li {
     display: inline-block;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 #footer .nav-links a {
@@ -375,7 +472,7 @@ Hero Section */
 }
 
 #footer .nav-links li img{
-    width: 50px; /* Set a specific size for icons */
+    width: 100px; /* Set a specific size for icons */
     height: auto;
     display: block; /* Ensure the link area matches the image size */
 }
@@ -384,4 +481,24 @@ Hero Section */
     display: flex;
     justify-content: space-between;
     margin-right: 4vw;
+}
+
+
+@media (max-width: 768px) {
+
+#footer .nav-links li img{
+    width: 40px; /* Set a specific size for icons */
+    height: auto;
+    display: block; /* Ensure the link area matches the image size */
+}
+
+#footer .nav-links li {
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+#footer .nav-links {
+    margin-left: 5vw;
+}
+
 }
