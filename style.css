@@ -402,6 +402,23 @@ Hero Section */
     transition-delay: 300ms; /* Staggered delay for second item */
 }
 
+@media (max-width: 768px) {
+    #img-content {
+        flex-direction: column; /* Stack project containers vertically */
+        align-items: center; /* Center align the project containers */
+    }
+
+    #project-1, #project-2, #project-3 {
+        max-width: 90%; /* Make the project container take almost full width */
+        margin: 5vw 0; /* Add vertical margin */
+    }
+
+    #project-1 img, #project-2 img, #project-3 img {
+        width: 100%; /* Make the images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 
 
 #education {
