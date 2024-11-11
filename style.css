@@ -426,7 +426,6 @@ Hero Section */
     }
 
     #project img {
-        width: 100%; /* Make the images responsive */
         height: auto; /* Maintain aspect ratio */
     }
 
