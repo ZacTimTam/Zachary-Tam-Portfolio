@@ -324,7 +324,7 @@ Hero Section */
     margin-bottom: 20px;
 }
 
-#project-1, #project-2, #project-3 {
+#project {
     display: flex;
     flex-direction: column; 
     align-items: center; /* Center aligns the content horizontally */
@@ -334,7 +334,7 @@ Hero Section */
     margin-bottom: 2rem; /* Space between rows when wrapping occurs */
 }
 
-#project-1 img, #project-2 img, #project-3 img {
+#project img {
     width: 350px; 
     height: 250px; 
     border-radius: 5%; /* Softens the corners of the image */
@@ -354,6 +354,10 @@ Hero Section */
 
 #img-content .project-container-3 {
     transition-delay: 600ms; /* Staggered delay for second item */
+}
+
+#img-content .project-container-4 {
+    transition-delay: 800ms; /* Staggered delay for second item */
 }
 
 
@@ -408,12 +412,12 @@ Hero Section */
         align-items: center; /* Center align the project containers */
     }
 
-    #project-1, #project-2, #project-3 {
+    #project {
         max-width: 90%; /* Make the project container take almost full width */
         margin: 5vw 0; /* Add vertical margin */
     }
 
-    #project-1 img, #project-2 img, #project-3 img {
+    #project img {
         width: 100%; /* Make the images responsive */
         height: auto; /* Maintain aspect ratio */
     }
