@@ -429,6 +429,11 @@ Hero Section */
         width: 100%; /* Make the images responsive */
         height: auto; /* Maintain aspect ratio */
     }
+
+    #technology img {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 
